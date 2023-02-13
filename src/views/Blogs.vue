@@ -30,6 +30,7 @@ export default {
     },
     profileAdmin() {
       return this.$store.state.profileAdmin;
+      // return true;
     },
   },
   beforeDestroy() {

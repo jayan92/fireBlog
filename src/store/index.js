@@ -42,18 +42,15 @@ export default new Vuex.Store({
     },
     fileNameChange(state, payload) {
       state.blogPhotoName = payload;
-      console.log(state.blogPhotoName);
     },
     createFileURL(state, payload) {
       state.blogPhotoFileURL = payload;
-      console.log(state.blogPhotoFileURL);
     },
     openPhotoPreview(state) {
       state.blogPhotoPreview = !state.blogPhotoPreview;
     },
     toggleEditPost(state, payload) {
       state.editPost = payload;
-      console.log(state.editPost);
     },
     setBlogState(state, payload) {
       state.blogTitle = payload.blogTitle;
@@ -115,7 +112,6 @@ export default new Vuex.Store({
             blogCoverPhotoName: doc.data().blogCoverPhotoName,
           };
           state.blogPosts.push(data);
-          console.log(state.blogPosts)
         }
       });
       state.postLoaded = true;

@@ -93,7 +93,6 @@ export default {
     this.currentBlog = await this.$store.state.blogPosts.filter((post) => {
       return post.blogID === this.routeID;
     });
-    console.log(this.currentBlog)
     this.$store.commit("setBlogState", this.currentBlog[0]);
   },
   methods: {
